@@ -3156,11 +3156,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/devnishant/Editing/ThinkBridge/Test1/Tg/Backend/InvoiceBackend/InvoiceBackend.csproj",
+      "projectUniqueName": "/Users/devnishant/Editing/ThinkBridge/Test1/Backend/InvoiceBackend/InvoiceBackend.csproj",
       "projectName": "InvoiceBackend",
-      "projectPath": "/Users/devnishant/Editing/ThinkBridge/Test1/Tg/Backend/InvoiceBackend/InvoiceBackend.csproj",
+      "projectPath": "/Users/devnishant/Editing/ThinkBridge/Test1/Backend/InvoiceBackend/InvoiceBackend.csproj",
       "packagesPath": "/Users/devnishant/.nuget/packages/",
-      "outputPath": "/Users/devnishant/Editing/ThinkBridge/Test1/Tg/Backend/InvoiceBackend/obj/",
+      "outputPath": "/Users/devnishant/Editing/ThinkBridge/Test1/Backend/InvoiceBackend/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/devnishant/.nuget/NuGet/NuGet.Config"

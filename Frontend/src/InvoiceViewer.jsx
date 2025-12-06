@@ -6,9 +6,9 @@ export default function InvoiceViewer() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    console.log('here');
+    console.log('here i am ');
 
-    fetch('https://thinkbridgeinvoiceapi.azurewebsites.net')
+    fetch('https://thinkbridgeinvoiceapi.azurewebsites.net/api/invoice')
       .then((resp) => {
         if (!resp.ok) throw new Error('Network response was not ok');
         return resp.json();
@@ -29,7 +29,7 @@ export default function InvoiceViewer() {
 
   return (
     <div style={{ fontFamily: 'system-ui, -apple-system, Roboto, "Segoe UI", sans-serif', padding: 16 }}>
-      <h1 style={{ margin: '0 0 12px 0' }}>Invoice</h1>
+      <h1 style={{ margin: '0 0 12px 0' }}>Thinkbridge Invoice Dashboard</h1>
 
       <div id="invoice-container">
         {invoices.length === 0 && <div>No invoices found.</div>}

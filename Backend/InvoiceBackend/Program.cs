@@ -22,7 +22,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowUI", policy =>
     {
         policy
-            .AllowAnyOrigin()
+            .WithOrigins("http://localhost:5175","https://invoice-ui-fawn.vercel.app")
             .AllowAnyHeader()
             .AllowAnyMethod();
     });
@@ -30,7 +30,7 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// Swagger UI (optional)
+// Swagger UI
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
@@ -38,10 +38,9 @@ app.UseSwaggerUI(c =>
     c.RoutePrefix = string.Empty;
 });
 
-// IMPORTANT: Apply CORS BEFORE auth and BEFORE mapping controllers
-app.UseCors("AllowUI");
-
 app.UseHttpsRedirection();
+app.UseRouting();
+app.UseCors("AllowUI");
 app.UseAuthorization();
 
 app.MapControllers();
