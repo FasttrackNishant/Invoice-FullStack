@@ -3,6 +3,7 @@
 ## 🔗 URLs  
 - **Frontend ( UI)**: https://invoice-ui-fawn.vercel.app/
 - **Backend (Web API + Swagger)**: https://thinkbridgeinvoiceapi.azurewebsites.net/
+- Please refresh page in case of error occurred due to time out because of low configuration servers
 
 ---
 
